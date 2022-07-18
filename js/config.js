@@ -11,3 +11,4 @@ export{
     height,
     resizeConfig
 }
+// exporting how big the canvas should be 
