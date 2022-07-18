@@ -11,9 +11,10 @@ const container = canvas.getContext("2d")
  const zombies = []
 
  document.body.addEventListener("click", () =>{
-     //code block
+   
  })
 
  document.body.addEventListener("mousemove", (e) => {
-     // code block
+   let mouse = pointer(canvas, e)
+   player.rotate(mouse)
  })
