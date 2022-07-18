@@ -20,3 +20,4 @@ const container = canvas.getContext("2d")
    let mouse = pointer(canvas, e)
    player.rotate(mouse)
  })
+ 

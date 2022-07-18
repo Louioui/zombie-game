@@ -1,3 +1,6 @@
+import {width,height} from "../config.js"
+import {distance} from "../libary/utils.js"
+
 class Bullet {
     radius = 4
     speed = 10
