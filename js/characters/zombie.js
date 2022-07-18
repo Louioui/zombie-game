@@ -1,4 +1,5 @@
 import {width, height} from "../config.js"
+import {random} from "../libary/utils"
 class Zombie {
     speed = 1.1
     radius = 20
