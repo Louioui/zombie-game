@@ -10,9 +10,11 @@ const container = canvas.getContext("2d")
  const bullets = []
  const zombies = []
 
- document.body.addEventListener("click", () =>{
-   
- })
+ document.body.addEventListener("click", () => {
+    bullets.push(
+      new Bullet(player.vector.x, player.vector.y, player.angle)
+    )
+  })
 
  document.body.addEventListener("mousemove", (e) => {
    let mouse = pointer(canvas, e)
