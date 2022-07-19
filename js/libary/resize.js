@@ -1,8 +1,9 @@
 import { width, height, resizeConfig } from "../config"
  const resize = canvas => {
-     reisizeHandler(canvas)
+     resizeHandler(canvas)
      document.body.addEventListener('resize', ()=>{
          resizeHandler(canvas)
+         resizeConfig();
      })
  }
 const resizeHandler = (canvas)=>{

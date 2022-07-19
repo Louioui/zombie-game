@@ -22,5 +22,12 @@ class Bullet {
               this.vector.x < 0 - this.radius ||
               this.vector.y < 0 - this.radius)
     }
+
+    update(bullets, zombies){
+      if(this.boundary()){
+        bullets = bullets.splice(bullets.indexOf(this),1)
+        return 
+      }
+    }
 }
 export default Bullet

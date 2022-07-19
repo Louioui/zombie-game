@@ -11,12 +11,13 @@ class Player {
     speed= 2
     radius = 20
     angle = -Math.PI/ 2 
-
+     //destructure the pointer coords
     rotate({x,y}){
         let rY = y -this.vector.y
-        let rX = x -this.vector.x
-        this.angle = Math.atan2(rY,rX)
+        let rX = x -this.vector.x 
         // getting the angle from the player to the cursor in radius 
+        this.angle = Math.atan2(rY,rX)
+       
     }
     move() {
       if(key("w") && this.vector.y - this.speed - this.radius > 0) {
@@ -71,7 +72,9 @@ class Player {
         char.moveTo(this.vector.x + 5, this.vector.y - this.radius + 2)
         char.lineTo(this.vector.x + this.radius + 15, this.vector.y - 5)
         char.stroke()
+
         char.restore()
       }
+      
 }
 export default Player

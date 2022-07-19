@@ -4,7 +4,7 @@ class Zombie {
     speed = 1.1
     radius = 20
     health = 5
-    custom = "dead"
+    custom = "close"
    
   
     constructor(player) {
@@ -55,7 +55,7 @@ class Zombie {
     
         // Right Hand
         if(frame % 50 == 0) {
-          this.costume = this.costume == "dead" ? "open" : "dead"
+          this.costume = this.costume == "close" ? "open" : "close"
         }
     
         if(this.costume == "dead") {

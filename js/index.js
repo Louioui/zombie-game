@@ -1,3 +1,4 @@
+import pointer from "./libary/pointer"
 import resize from "./libary/resize"
 import { width, height } from "./config"
 import Player from "../characters/player"
@@ -5,7 +6,7 @@ import Zombie from "./characters/zombie"
 import Bullet from "./characters/bullet"
 
 const canvas = document.getElementById("zombieGame")
-const container = canvas.getContext("2d")
+const char= canvas.getContext("2d")
  resize(canvas);
 
  const player = new Player()
