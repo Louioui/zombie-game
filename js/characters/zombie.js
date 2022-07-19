@@ -32,7 +32,7 @@ class Zombie {
       this.vector.y += Math.sin(this.angle) * this.speed
     }
 
-    make(char, frame) {
+    contribute(char, frame) {
         char.save()
     
         let tX = this.vector.x 
